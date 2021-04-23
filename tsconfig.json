@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "ES2020"
+        ],
+        "types": [
+            "node",
+            "webdriverio/async",
+            "@wdio/mocha-framework",
+            "expect-webdriverio"
+        ],
+        "moduleResolution": "node",
+        "target": "es2019",
+        "module": "commonjs",
+        "baseUrl": ".",
+        "noImplicitAny": false,
+        "noImplicitReturns": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "outDir": "./dist",
+        "pretty": true,
+        "noImplicitThis": true,
+        "strictNullChecks": false,
+        "strict": false
+    },
+    "exclude": [
+        "./node_modules"
+    ],
+    "include": [
+        "./*.ts",
+        "./test/**/*.ts"
+    ],
+    "compileOnSave": true
+}
