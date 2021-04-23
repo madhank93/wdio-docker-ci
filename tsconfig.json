@@ -30,7 +30,8 @@
     ],
     "include": [
         "./*.ts",
-        "./test/**/*.ts"
+        "./test/**/*.ts",
+        "wdio.conf.js"
     ],
     "compileOnSave": true
 }
