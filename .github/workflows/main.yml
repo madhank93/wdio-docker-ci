@@ -34,5 +34,8 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
 
+      - name : Install the dependencies
+        run : npm install
+
       - name : Run the scripts
         run : npm run test
