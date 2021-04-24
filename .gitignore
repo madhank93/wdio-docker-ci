@@ -5,6 +5,7 @@ dist/
 # Allure report and results
 allure-report/
 allure-results/
+last-history/
 
 # VS code settings
 .vscode/
