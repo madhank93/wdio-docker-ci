@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/@wdio/cli/bin/wdio.js --spec",
+    "test": "npx wdio run wdio.conf.ts",
     "spec": "wdio --spec ./test/specs/$FILE",
     "grep": "npm run test -- --mochaOpts.grep",
     "report": "allure generate --clean allure-results && allure open"
