@@ -1,4 +1,4 @@
-exports.config = {
+export const config: WebdriverIO.Config = {
     //
     // ====================
     // Runner Configuration
@@ -86,8 +86,6 @@ exports.config = {
     // Level of logging verbosity: trace | debug | info | warn | error
     logLevel: 'error',
     //
-    // Warns when a deprecated command is used
-    deprecationWarnings: true,
     //
     // If you only want to run your tests until a specific amount of tests have failed use
     // bail (default is 0 - don't bail, run all tests).
@@ -147,9 +145,6 @@ exports.config = {
             transpileOnly: true,
             project: 'tsconfig.json'
         },
-        tsConfigPathsOpts: {
-            baseUrl: './'
-        }
     },
     //
     // =====
@@ -266,7 +261,6 @@ exports.config = {
      */
     //onComplete: function (exitCode, config, capabilities, results) {
     //},
-    debug: true,
     reporters: [['allure', {
         outputDir: 'allure-results',
         disableWebdriverStepsReporting: true,
