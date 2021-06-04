@@ -37,46 +37,73 @@ export const config: WebdriverIO.Config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: process.env.SELENOID === 'true' ? 1 : 2,
 
-    maxInstancesPerCapability: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    capabilities: [{
-        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-        // grid with only 5 firefox instances available you can make sure that not more than
-        // 5 instances get started at a time.
-        maxInstances: 5,
-        //
-        browserName: 'chrome',
-        'goog:chromeOptions': {
-            args: [
-                '--no-sandbox',
-                '--disable-gpu',
-                '--start-fullscreen',
-                '--disable-infobars',
-                '--disable-notifications',
-                '--window-size=1366,2160'
-            ],
-            prefs: {
-                'directory_upgrade': true,
-                'prompt_for_download': false,
+    capabilities: [
+        {
+            browserName: 'chrome',
+            'goog:chromeOptions': {
+                args: [
+                    '--no-sandbox',
+                    '--start-fullscreen',
+                    '--disable-infobars',
+                    '--disable-notifications',
+                ].concat(
+                    process.env.SELENOID === 'true' ? [
+                        // When debugging with Selenoid support headless mode is not enabled
+                        // to allow viewing actions in the browser.
+                    ] : [
+                        '--headless',
+                        '--disable-gpu',
+                    ],
+                ),
+                prefs: {
+                    'directory_upgrade': true,
+                    'prompt_for_download': false,
+                }
+            },
+            'selenoid:options': {
+                enableLog: true,
+                ...(
+                    process.env.SELENOID === 'true' ? {
+                        enableVNC: true,
+                        enableVideo: true,
+                    } : {}
+                )
             }
         },
-    },
-    {
-        maxInstances: 5,
-        browserName: 'firefox',
-        'moz:firefoxOptions': {
-            args: [
-                '--window-size=1366,2160'
-            ],
+        {
+            browserName: 'firefox',
+            'moz:firefoxOptions': {
+                args: [
+                    '--window-size=1280x1024x24'
+                ].concat(
+                    process.env.SELENOID === 'true' ? [
+                        // When debugging with Selenoid support headless mode is not enabled
+                        // to allow viewing actions in the browser.
+                    ] : [
+                        '-headless',
+                        '--disable-gpu',
+                    ],
+                ),
+            },
+            'acceptInsecureCerts': true,
+            'selenoid:options': {
+                enableLog: true,
+                ...(
+                    process.env.SELENOID === 'true' ? {
+                        enableVNC: true,
+                        enableVideo: true,
+                    } : {}
+                )
+            }
         },
-        'acceptInsecureCerts': true,
-    }],
+    ],
     //
     // ===================
     // Test Configurations
@@ -111,7 +138,7 @@ export const config: WebdriverIO.Config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    hostname: 'localhost',
+    hostname: 'selenoid',
     port: 4444,
     path: "/wd/hub",
     // Framework you want to run your specs with.
