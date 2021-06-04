@@ -1,0 +1,48 @@
+version: "3.4"
+services:
+  selenoid:
+    volumes:
+      - "./selenoid-outputs/browsers:/etc/selenoid:ro"
+      - "./selenoid-outputs/output/:/output"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "./selenoid-outputs/logs:/opt/selenoid/logs"
+    command: [
+        "-conf", # Flag for browsers configuration
+        "/etc/selenoid/browsers.json", # Location for browsers configuration file
+        "-container-network", # Network to be used for containers - flag
+        "selenoid", # network name
+        "-log-output-dir", # Flag to save logs in a directory
+        "/opt/selenoid/logs", # Location of the directory
+        "-limit", # Flag for number of simultaneous container to run
+        "5", # run count
+        "-save-all-logs", # to save all logs without considering capabilities
+        "-enable-file-upload", # file upload support
+      ]
+
+  chrome:
+    image: "selenoid/chrome:${CHROME_VERSION}"
+    container_name: chrome
+    links:
+      - selenoid
+    depends_on:
+      - selenoid
+    networks:
+      - selenoid
+    volumes:
+      - "/dev/shm:/dev/shm"
+
+  firefox:
+    image: "selenoid/firefox:${FIREFOX_VERSION}"
+    container_name: firefox
+    links:
+      - selenoid
+    depends_on:
+      - selenoid
+    networks:
+      - selenoid
+    volumes:
+      - "/dev/shm:/dev/shm"
+
+networks:
+  selenoid:
+    name: selenoid

@@ -1,0 +1,17 @@
+# Node artifact files
+node_modules/
+dist/
+
+# Allure report and results
+allure-report/
+allure-results/
+last-history/
+
+# VS code settings
+.vscode/
+
+# Log files
+*.log
+
+# github yml files
+.github/
