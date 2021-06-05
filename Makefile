@@ -12,4 +12,4 @@ local-down:
 
 ci-up:
 	$(info Make: Starting docker in CI env)
-	docker-compose -f docker-compose.yml -f docker-compose.ci.yml up --abort-on-container-exit --exit-code-from t500
+	docker-compose -f docker-compose.yml -f docker-compose.ci.yml up --abort-on-container-exit --exit-code-from e2e
