@@ -1,7 +1,7 @@
 {
   "name": "wdio-ts-docker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Boilerplate for running selenoid & wdio based test scripts using docker compose",
   "main": "index.js",
   "scripts": {
     "test": "npx wdio run wdio.conf.ts",
@@ -9,6 +9,16 @@
     "grep": "npm run test -- --mochaOpts.grep",
     "report": "allure generate --clean allure-results && allure open"
   },
+  "keywords": [
+    "wdio",
+    "selenoid",
+    "boilerplate",
+    "typescript",
+    "docker-compose",
+    "github-actions",
+    "allure",
+    "github-pages"
+  ],
   "author": "Madhan",
   "license": "MIT",
   "devDependencies": {
