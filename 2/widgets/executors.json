@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://madhank93.github.io/wdio-docker-ci",
+  "buildOrder" : 2,
+  "buildName" : "GitHub Actions Run #908841922",
+  "buildUrl" : "https://github.com/madhank93/wdio-docker-ci/actions/runs/908841922",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/2/"
+} ]
