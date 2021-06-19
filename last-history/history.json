@@ -1,34 +1,23 @@
 {
-  "8ed0c78db23737664c6658dbb3cb9850" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "4e19168093ac9aaf",
-      "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/7//#testresult/4e19168093ac9aaf",
-      "status" : "passed",
-      "time" : {
-        "start" : 1624103156761,
-        "stop" : 1624103159830,
-        "duration" : 3069
-      }
-    } ]
-  },
   "bd13cb44031b3856cfad65a153aefff5" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "9c2f193b7b1bd669",
+      "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/7//#testresult/9c2f193b7b1bd669",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624103577207,
+        "stop" : 1624103577937,
+        "duration" : 730
+      }
+    }, {
       "uid" : "8863676822f4b6e2",
       "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/7//#testresult/8863676822f4b6e2",
       "status" : "passed",
@@ -36,6 +25,35 @@
         "start" : 1624103158560,
         "stop" : 1624103161291,
         "duration" : 2731
+      }
+    } ]
+  },
+  "8ed0c78db23737664c6658dbb3cb9850" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "e30cae455b6e6fbf",
+      "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/7//#testresult/e30cae455b6e6fbf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624103575405,
+        "stop" : 1624103576207,
+        "duration" : 802
+      }
+    }, {
+      "uid" : "4e19168093ac9aaf",
+      "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/7//#testresult/4e19168093ac9aaf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624103156761,
+        "stop" : 1624103159830,
+        "duration" : 3069
       }
     } ]
   }

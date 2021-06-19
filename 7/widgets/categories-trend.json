@@ -4,5 +4,10 @@
   "reportName" : "Allure Report with history",
   "data" : { }
 }, {
+  "buildOrder" : 7,
+  "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/7/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
   "data" : { }
 } ]
