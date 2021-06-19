@@ -60,6 +60,8 @@ jobs:
         # https://support.google.com/mail/answer/7126229?hl=en
         # And allow less secure apps
         # https://myaccount.google.com/lesssecureapps
+        # Display unlock captcha
+        # https://accounts.google.com/b/0/DisplayUnlockCaptcha
       - name: Send CI build status in mail
         if: always()
         uses: dawidd6/action-send-mail@v3
