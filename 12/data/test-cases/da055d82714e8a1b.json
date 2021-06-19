@@ -1,0 +1,105 @@
+{
+  "uid" : "da055d82714e8a1b",
+  "name" : "should login with valid credentials",
+  "fullName" : "My Login application.should login with valid credentials",
+  "historyId" : "8ed0c78db23737664c6658dbb3cb9850",
+  "time" : {
+    "start" : 1624105966714,
+    "stop" : 1624105967474,
+    "duration" : 760
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "My Login application"
+  }, {
+    "name" : "testClass",
+    "value" : "My Login application"
+  }, {
+    "name" : "testMethod",
+    "value" : "should login with valid credentials"
+  }, {
+    "name" : "package",
+    "value" : "My Login application"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-91.0.4472.106"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "1d85979a5cc45130",
+        "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/11//#testresult/1d85979a5cc45130",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624105604483,
+          "stop" : 1624105607842,
+          "duration" : 3359
+        }
+      }, {
+        "uid" : "e2d416696c898bd8",
+        "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/11//#testresult/e2d416696c898bd8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624104946677,
+          "stop" : 1624104947400,
+          "duration" : 723
+        }
+      }, {
+        "uid" : "87e06b880d89ce6a",
+        "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/10//#testresult/87e06b880d89ce6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624104512925,
+          "stop" : 1624104514705,
+          "duration" : 1780
+        }
+      }, {
+        "uid" : "72460eaa0ea5c699",
+        "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/9//#testresult/72460eaa0ea5c699",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624104160851,
+          "stop" : 1624104162613,
+          "duration" : 1762
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "da055d82714e8a1b.json",
+  "parameterValues" : [ "chrome-91.0.4472.106" ]
+}
