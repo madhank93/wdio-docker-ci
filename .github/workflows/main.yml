@@ -64,8 +64,6 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
           subject: Github actions for ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
           body: On ${{ github.event_name }} ${{ github.job }} job in workflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
           to: madhankumaravelu93@gmail.com
