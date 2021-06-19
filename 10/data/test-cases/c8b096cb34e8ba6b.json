@@ -1,0 +1,78 @@
+{
+  "uid" : "c8b096cb34e8ba6b",
+  "name" : "should login with valid credentials",
+  "fullName" : "My Login application.should login with valid credentials",
+  "historyId" : "bd13cb44031b3856cfad65a153aefff5",
+  "time" : {
+    "start" : 1624104515221,
+    "stop" : 1624104518099,
+    "duration" : 2878
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "1-0"
+  }, {
+    "name" : "suite",
+    "value" : "My Login application"
+  }, {
+    "name" : "testClass",
+    "value" : "My Login application"
+  }, {
+    "name" : "testMethod",
+    "value" : "should login with valid credentials"
+  }, {
+    "name" : "package",
+    "value" : "My Login application"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox-88.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "28189c0ea3c45e6c",
+        "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/9//#testresult/28189c0ea3c45e6c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624104162978,
+          "stop" : 1624104164740,
+          "duration" : 1762
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c8b096cb34e8ba6b.json",
+  "parameterValues" : [ "firefox-88.0" ]
+}
