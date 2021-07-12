@@ -4,13 +4,13 @@
     "name" : "0-0",
     "children" : [ {
       "name" : "should login with valid credentials",
-      "uid" : "5368a32ae310d0e4",
+      "uid" : "5173f4ec3514fdd3",
       "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
       "status" : "passed",
       "time" : {
-        "start" : 1626103502817,
-        "stop" : 1626103504627,
-        "duration" : 1810
+        "start" : 1626107022116,
+        "stop" : 1626107023185,
+        "duration" : 1069
       },
       "flaky" : false,
       "newFailed" : false,
@@ -21,13 +21,13 @@
     "name" : "1-0",
     "children" : [ {
       "name" : "should login with valid credentials",
-      "uid" : "db733d6adb6ae687",
+      "uid" : "70e6f59f405342af",
       "parentUid" : "5d884c24784638b93056bad95e3212e7",
       "status" : "passed",
       "time" : {
-        "start" : 1626103505202,
-        "stop" : 1626103506843,
-        "duration" : 1641
+        "start" : 1626107024429,
+        "stop" : 1626107025414,
+        "duration" : 985
       },
       "flaky" : false,
       "newFailed" : false,

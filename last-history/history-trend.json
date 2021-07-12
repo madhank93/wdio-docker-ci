@@ -11,6 +11,18 @@
     "total" : 2
   }
 }, {
+  "buildOrder" : 13,
+  "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/13/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 2,
+    "unknown" : 0,
+    "total" : 2
+  }
+}, {
   "buildOrder" : 12,
   "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/12/",
   "reportName" : "Allure Report with history",
