@@ -62,15 +62,15 @@ jobs:
         # https://myaccount.google.com/lesssecureapps
         # Display unlock captcha
         # https://accounts.google.com/b/0/DisplayUnlockCaptcha
-      - name: Send CI build status in mail
-        if: always()
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: Github actions for ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
-          body: On ${{ github.event_name }} ${{ github.job }} job in workflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
-          to: madhankumaravelu93@gmail.com
-          from: Madhan K
+      #- name: Send CI build status in mail
+      #  if: always()
+      #  uses: dawidd6/action-send-mail@v3
+      #  with:
+      #    server_address: smtp.gmail.com
+      #    server_port: 465
+      #    username: ${{ secrets.EMAIL_USERNAME }}
+      #    password: ${{ secrets.EMAIL_PASSWORD }}
+      #    subject: Github actions for ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
+      #    body: On ${{ github.event_name }} ${{ github.job }} job in workflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
+      #    to: madhankumaravelu93@gmail.com
+      #    from: Madhan K
