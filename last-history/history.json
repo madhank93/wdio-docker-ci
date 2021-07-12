@@ -4,11 +4,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "df1f0b28d8133099",
+      "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/12//#testresult/df1f0b28d8133099",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626103458149,
+        "stop" : 1626103458899,
+        "duration" : 750
+      }
+    }, {
       "uid" : "8400dc68a76b205f",
       "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/12//#testresult/8400dc68a76b205f",
       "status" : "passed",
@@ -60,11 +69,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "c9d7566b21997602",
+      "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/12//#testresult/c9d7566b21997602",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626103455852,
+        "stop" : 1626103456643,
+        "duration" : 791
+      }
+    }, {
       "uid" : "da055d82714e8a1b",
       "reportUrl" : "https://madhank93.github.io/wdio-docker-ci/12//#testresult/da055d82714e8a1b",
       "status" : "passed",
